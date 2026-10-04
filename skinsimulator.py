@@ -1,0 +1,19 @@
+from Chromatophore import Chromatophore
+import matplotlib as plt
+
+def create_grid():
+
+    grid = [[Chromatophore(x, y) for x in range(64)] for y in range(64)]
+
+    return grid
+
+def display():
+    data = [
+        [1 if obj.on else 0 for obj in row]
+        for row in grid
+    ]
+
+    plt.imshow(data, cmap="gray_r", vmin=0, vmax=1)
+    plt.xticks([])
+    plt.yticks([])
+    plt.show()
