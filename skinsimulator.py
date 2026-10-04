@@ -1,5 +1,5 @@
 from Chromatophore import Chromatophore
-import matplotlib as plt
+import matplotlib.pyplot  as plt
 
 def create_grid():
 
