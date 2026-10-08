@@ -6,7 +6,7 @@ class MotorUnit:
         self.action_potential = 0.0 # action potential is the electrical current
         self.chromatophores = [] # cluster of chromatophores controlled by this motor unit, identified by their (x,y) position
         self.neighborhood = [] # Motur units it is connected to
-        self.signal = 'relax' # Contract or relax the chromatophores controlled by this MU, simplification of the calcium/potassium pathway
+        self.signal = 'contract' # Contract or relax the chromatophores controlled by this MU, simplification of the calcium/potassium pathway
 
     """ 
     Control of chromatophores
