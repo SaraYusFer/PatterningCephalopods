@@ -1,7 +1,7 @@
 class Chromatophore:
 
-    def __init__(self, x: float, y: float):
-        self.status = 'off' # [on/off], initialized 
+    def __init__(self, x: int, y: int):
+        self.status = 'off' # [on/off], initialized on off (contracted, not visible) 
         self.coordinates = [x,y] # position
         self.mu = [] #list of motor units that control the chromatophore
 
