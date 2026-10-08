@@ -1,15 +1,14 @@
 from Chromatophore import Chromatophore
 import matplotlib.pyplot  as plt
 
-def create_grid():
-
-    grid = [[Chromatophore(x, y) for x in range(24)] for y in range(24)]
+def create_grid(size):
+    grid = [[Chromatophore(x, y) for x in range(size)] for y in range(size)]
 
     return grid
 
 def display(grid):
     data = [
-        [1 if obj.on else 0 for obj in row]
+        [1 if ch.on else 0 for ch in row]
         for row in grid
     ]
 
