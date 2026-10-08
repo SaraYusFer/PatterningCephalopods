@@ -1,8 +1,9 @@
 class MotorUnit:
 
-    def __init__(self, motorunit_id):
+    def __init__(self, motorunit_id: int, x: int, y: int):
 
         self.id = motorunit_id # identify the motor unit
+        self.coordinates = [x,y] # position of the motor unit (necessary to calculate the neighborhood)
         self.action_potential = 0.0 # action potential is the electrical current
         self.chromatophores = [] # cluster of chromatophores controlled by this motor unit, identified by their (x,y) position
         self.neighborhood = [] # Motur units it is connected to
