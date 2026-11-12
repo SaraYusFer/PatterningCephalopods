@@ -1,5 +1,5 @@
-import skinsimulator
-import networksimulator
+import archive.skinsimulator as skinsimulator
+import archive.networksimulator as networksimulator
 
 
 # Global values: simulation parameters can be changed here

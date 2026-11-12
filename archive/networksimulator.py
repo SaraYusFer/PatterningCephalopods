@@ -1,4 +1,4 @@
-from MotorUnit import MotorUnit
+from archive.MotorUnit import MotorUnit
 
 """
 Instantiate motor units and connect them

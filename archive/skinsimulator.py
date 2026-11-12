@@ -1,4 +1,4 @@
-from Chromatophore import Chromatophore
+from archive.Chromatophore import Chromatophore
 import matplotlib.pyplot  as plt
 
 def create_grid(size):
