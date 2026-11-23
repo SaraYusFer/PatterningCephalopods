@@ -31,11 +31,11 @@ u[0] = 20 # Hz
 
 # Modify weights to have recurrent connections and inhibitory neurons
 # First Input neuron excites neuron 0, second input neuron excites neuron 1
-W = ([[1,0],[0,1],[0,0]])
+W = ([[1,0],[0,0],[0,0]])
 
 # Recurrent connections: each neuron excites its next neighbor
 # Rows represent receiving (postsynaptic) neurons and columns represent sending (presynaptic) neurons
-M = ([[0,0,0],[1,0,0],[0,1,0]])
+M = ([[0,-1,0],[1,0,-1],[0,1,0]])
 
 # Time loop: forward Euler method
 ## tau_r * dv/dt = -1 * v + F(I_s), where F = [I_s-gamma]+ and I_s = W * u
